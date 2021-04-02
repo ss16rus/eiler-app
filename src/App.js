@@ -10,8 +10,9 @@ import Test from './components/test.js';
 import Task01 from './components/task_01/task01.js';
 import Task02 from './components/task_02/task02.js';
 import Task03 from './components/task_03/task03.js';
+import Task04 from './components/task_04/task04.js';
 
-const tasks_done = 3;
+const tasks_done = 4;
 
 function App() {
   let arr = new Array( tasks_done );
@@ -49,6 +50,10 @@ function App() {
 
 						<Route path="/task-03">
 							<Task03 target={600851475143}>Задача 03</Task03>
+						</Route>
+
+						<Route path="/task-04">
+							<Task04>Задача 04</Task04>
 						</Route>
 					</Switch>
 
